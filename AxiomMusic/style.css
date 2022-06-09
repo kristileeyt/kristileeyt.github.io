@@ -1,0 +1,620 @@
+@import url("https://kit.fontawesome.com/5f7e61715e.js");
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+
+/*general configurations*/
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1920px;
+  background-color: #151415;
+  font-family: "Arial";
+  font-size: 16px;
+  color: #ffffff;
+  box-sizing: inherit;
+}
+
+/*homepage background*/
+
+.bg-desktop {
+  background-image: url('https://github.com/kristileeyt/kristileeyt.github.io/blob/main/images/HomeDesktop.png?raw=true');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;  
+  background-size: cover;
+  background-size: relative;
+}
+
+/*text*/
+
+.a {position: absolute; width: 100%; text-align: left;}
+.b {position: absolute; width: 100%; text-align: center;}
+.c {position: absolute; width: 100%; text-align: right;} 
+.d {position: absolute; width: 100%; text-align: justify;} 
+
+h1 {font-family: "Source Serif Pro SemiBold 600"; font-size: 28px;}
+h2 {font-family: "Source Serif Pro SemiBold 600"; font-size: 24px;}
+h3 {font-family: "Source Serif Pro SemiBold 600"; font-size: 20px;}
+h4 {font-family: "Source Serif Pro SemiBold 600"; font-size: 16px;}
+p {font-family: "Arial"; font-size: 12px;}
+
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+
+/*line divider*/
+
+hr.divider {
+  border-top: 1px solid rgba(25,25,25);
+}
+
+/*grids*/
+
+.grid-container-4 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: transparent;
+  padding: 8px;
+  align-content: center;
+  justify-content: center;
+}
+
+  
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: transparent;
+  padding: 8px;
+  align-content: center;
+  justify-content: center;
+}
+
+
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: transparent;
+  padding: 8px;
+  align-content: center;
+  justify-content: center;
+}
+  
+.grid-container {
+  display: grid;
+  width: auto;
+  height: auto;
+  grid-template-columns: auto;
+  background-color: transparent;
+  padding: 8px;
+  align-content: center;
+  justify-content: center;
+}
+  
+  .grid-container-screen {
+  width: 100vw;
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: transparent;
+  padding: 0px;
+  align-content: center;
+  justify-content: center;
+}
+
+  h1.hidden {
+  visibility: hidden;
+}
+
+.grid-item {
+  color: white;
+  display: inline-block;
+  border: none;
+  padding: 1rem;
+  text-align: center;
+}
+
+/*navigation bar*/
+
+.navbar {
+  background-color: #000000;
+  width: 100%;
+  height: 60px;
+  padding: 0.5rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.bar1 {
+  background-color: transparent;
+  width: 100%;
+  height: 20px;
+  padding: 0px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: left;
+}
+
+.bar2 {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 25px;
+  padding: 0.5rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.menubox {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 90%;
+  height: auto;
+  padding: 5px 5px;
+  text-align: justify;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+/*main menu bar*/
+
+.mainMenu {
+  width: 230px;
+  height: 800px;
+  background: #000000;
+  opacity: 100%;
+  position: relative;
+  padding: 15px 20px;
+  top: 0px;
+  left: 0px;
+}
+
+/*footer bar*/
+
+.footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  bottom: 0px;
+  align-content: center;
+}
+
+/*table*/
+
+table {
+  font-size: 12px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid white;
+  text-align: left;
+  padding: 8px;
+  padding-right: 200px;
+}
+
+th{
+  background-color: rgba(255,255,255,0.2);
+  border: 1px solid white;
+  text-align: left;
+  padding: 8px;
+}
+
+
+/*textboxes*/
+
+.navbar input[type=text], select {
+  width: 50vw;
+  padding: 8px 16px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.grid-item input[type=text], select {
+  width: 40vw;
+  padding: 8px 16px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/*primary buttons*/
+
+.button-primary {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-family: "Source Serif Pro semibold";
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    background-color: #c64b4b;
+    border: none;
+    border-radius: 8px;
+  }
+  .button-primary:hover {background-color: #973030;}
+  .button-primary:active {background-color: #6e2828; transform: scale(0.95);}
+  
+/*secondary buttons*/
+  
+  .button-secondary {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-family: "Source Serif Pro semibold";
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    background-color: rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 8px;
+  }
+  .button-secondary:hover {background-color: rgba(255,255,255,0.2);}
+  .button-secondary:active {background-color: rgba(255,255,255,0.4);transform: scale(0.95);}
+  
+/*tertiary buttons*/
+  
+  .button-tertiary {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-family: "Source Serif Pro semibold";
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+}
+  .button-tertiary:hover {text-decoration: underline;}
+  .button-tertiary:active {color: #c64b4b; transform: scale(0.95);}
+  
+/*icon buttons*/
+  
+  .button-icon {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-family: "Source Serif Pro semibold";
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+  }
+  .button-icon:hover {color: #c64b4b}
+  .button-icon:active {color: #6e2828; transform: scale(0.95);}
+
+  /*links*/
+  
+  .button-link {
+    display: inline-block;
+    padding: 0px 0px;
+    font-size: 12px;
+    font-family: "Arial";
+    cursor: pointer;
+    text-align: center;
+    text-decoration: underline;
+    outline: none;
+    color: rgba(255,255,255,0.4);
+    border: none;
+    border-radius: none;
+  }
+  .button-icon:hover {color: #ffffff;}
+  .button-icon:active {color: #c64b4b;}
+
+
+/*product button*/
+
+.button-product {
+    background-image: url(https://github.com/kristileeyt/kristileeyt.github.io/blob/main/images/Product1.jpeg?raw=true); 
+    background-size: 18vw 18vw;
+    width: 18vw;
+    height: 18vw;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Source Serif Pro semibold";
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    background-color: rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 8px;
+  }
+
+  /*product container*/
+
+.button-grid {
+  width: 20vw;
+  height: auto;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Source Serif Pro semibold";
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: rgba(255,255,255,0.05);
+  border: 2px solid rgba(255,255,255,0.2);
+  padding: 12px 8px;
+  border-radius: 8px;
+}
+
+
+/*category buttons S*/
+
+.button-category-s {
+  width: 18vw;
+  height: 20vw;
+  background-image: url(https://github.com/kristileeyt/kristileeyt.github.io/blob/main/images/GuitarButton.png?raw=true); 
+  background-size: 18vw 20vw;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Source Serif Pro semibold";
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color: rgba(255,255,255,0.1);
+  border: none;
+  border-radius: 8px;
+  }
+  .button-category-s:hover {background-image: url(https://github.com/kristileeyt/kristileeyt.github.io/blob/main/images/GuitarButton%20Hover.png?raw=true); }
+  .button-category-s:active {transform: scale(0.95);}
+
+/*category buttons M*/
+
+.button-category-m {
+  background-image: url(https://github.com/kristileeyt/kristileeyt.github.io/blob/main/images/LimitedSaleButton.png?raw=true); 
+  background-size: 40vw 20vw;
+  display: inline-block;
+  width: 40vw;
+  height: 20vw;
+  font-size: 16px;
+  font-family: "Source Serif Pro semibold";
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color: rgba(255,255,255,0.1);
+  border: none;
+  border-radius: 8px;
+}
+.button-category-m:hover {background-image: url(https://github.com/kristileeyt/kristileeyt.github.io/blob/main/images/LimitedSaleButtonHover.png?raw=true); }
+.button-category-m:active {transform: scale(0.95);}
+
+/* checkbox */
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 1rem;
+  border-radius: 1px;
+  cursor: pointer;
+  font-size: 1rem;
+  user-select: none;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 5px;
+}
+.container:hover input ~ .checkmark {background-color: rgba(255,255,255,0.3);}
+.container input:checked ~ .checkmark {background-color: #c64b4b;}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {display: block;}
+.container .checkmark:after {
+  content: "✔︎";
+  top: 3px;
+  left: 6px;
+}
+
+/*scroll button*/
+
+#button-scroll {
+  opacity: 0%;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background-color: #c64b4b;
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  border-width: 2px;
+  border-color: #ffffff;
+  border-radius: 25px;
+  font-size: 22px;
+  font-family: "Source Serif Pro Semibold";
+  transition: opacity 0.2s, transform 0.2s;
+}
+#button-scroll.show {
+  opacity: 100%;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+/*add to cart button*/
+
+button {
+  font-family: "Source Serif Pro semibold";
+  font-size: 16px;
+  padding: 12px 16px;
+  border: 0px;
+  border-radius: 8px;
+  color: white;
+  background-color: #c64b4b;
+}
+button:hover {transform: scale(1.05);}
+button:active {transform: scale(0.95);}
+
+
+/*dropdown button - click version*/
+
+.dropbtn {
+  font-family: "Source Serif Pro semibold";
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #c64b4b;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+dropdown-content a {
+  width: 250px;
+  height: 813px;
+  background: #000000;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  text-indent: 3vw;
+}
+.dropdown a:hover {background-color: #c64b4b;}
+.show {display: block;}
+
+/*dropdown button - hover version*/
+
+.dropbtn-h {
+  background-color: #151415;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+}
+
+.dropdown-h {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content-h {
+  display: none;
+  position: absolute;
+  color: white;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content-h a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-h a:hover {background-color: #c64b4b;}
+.dropdown-h:hover .dropdown-content-h {display: block;}
+.dropdown-h:hover .dropbtn-h {background-color: #c64b4b;}
+
+/*responsive designs*/
+
+@media screen and (max-width: 640px) {
+  .bg-desktop {
+    background-image: url('https://github.com/kristileeyt/kristileeyt.github.io/blob/main/images/HomeMobile.png?raw=true');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;  
+    background-size: cover;
+    background-size: relative;
+  }
+
+  .navbar {
+    height: auto;
+  }
+  .grid-container-4 {
+    display: block;
+  }
+
+  .grid-container-3 {
+    display: block;
+  }
+
+  .grid-container-2 {
+    display: block;
+  }
+  .grid-container {
+    width: 100%;
+    align-content: center;
+  }
+  .button-category-s {
+    background-size: 22vw 24vw;
+    width: 22vw;
+    height: 24vw;
+  }
+  .button-category-m {
+    background-size: 80vw 40vw;
+    width: 80vw;
+    height: 40vw;
+  }
+  .grid-item input[type=text], select {
+    width: 80vw;
+  }
+}
+

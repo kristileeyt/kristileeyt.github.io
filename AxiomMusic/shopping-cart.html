@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/5f7e61715e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div class="navbar"> <!--navbar-->
+      <a href="index.html"><img src="https://github.com/kristileeyt/kristileeyt.github.io/blob/main/images/AxiomIcon.png?raw=true" 
+      width=140px alt="AxiomLogo"></a>
+    </div>
+    <div class="navbar">
+      <div class="dropdown"> <!--dropdown menu on click-->
+        <button onclick="myFunction()" class="dropbtn" style="font-size:24px"><i class="fa-solid fa-bars"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <div class="mainMenu">
+        <br><br>
+        <a href="#"class="button-primary">Sign Up</a>
+        <a href="#"class="button-tertiary">Log In</a>
+          <h2 style="text-indent:20px">Shop</h2>
+          <div class="dropdown-h"> <!--dropdown menu on hover-->
+            <button class="dropbtn-h">All Categories ▾</button>
+            <div class="dropdown-content-h">
+              <a href="products-listing.html">Acoustic Guitars</a> 
+              <a href="#">Electric Guitars</a>
+              <a href="#">Guitar Packs</a>
+              <a href="#">Ukuleles</a>
+              <a href="#">Violins</a>
+              <a href="#">Violas & Cellos</a>
+              <a href="#">Brass</a>
+              <a href="#">Woodwind</a>
+              <a href="#">Percussion</a>
+              <a href="#">Folk Instruments</a>
+              <a href="#">Keyboards</a>
+              <a href="#">Accessories</a>
+            </div>
+          </div>
+          <a href="#" class="button-tertiary">School Bulk Purchasing</a><br><br>
+          <hr class="divider"><br>
+          <h2 style="text-indent:20px">About Us</h2>
+          <a href="#" class="button-tertiary">Who We Are</a><br>
+          <a href="#" class="button-tertiary">FAQ</a><br>
+          <a href="#" class="button-tertiary">Contact Us</a><br><br>
+          <hr class="divider"><br>
+          <h2 style="text-indent:20px">Information</h2>
+          <a href="#" class="button-tertiary">Terms of Use</a><br>
+          <a href="#" class="button-tertiary">Warranty</a><br>
+          <a href="#" class="button-tertiary">My Wishlist</a><br>
+          <a href="#" class="button-tertiary">Track Order</a><br> 
+          <a href="#" class="button-tertiary">Settings</a><br> 
+      </div>
+        </div>
+      </div>
+      <input type="text" placeholder="Search our store..."><a href="#" class="button-secondary"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="shopping-cart.html" class="button-icon" style="font-size: 24px;"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+    <div class="bar1">
+      <h4><button onclick="history.back()" style="padding:5px 15px"><</button></h4> <!--go back to previous page-->
+    </div>
+
+    <h2 style="text-align:center">My Cart</h2>
+    
+    <div class="grid-container-2">
+        <div class="grid-item">
+            <hr class="divider">
+            <div class="grid-container-2">
+                <div grid-item style="text-align:left;">
+                    <img src="//github.com/kristileeyt/kristileeyt.github.io/blob/main/images/Product1.jpeg?raw=true" style="border-radius: 8px; height: 100px; min-width: 100px;"></img>
+                </div>
+                <div class="grid-item" style="align-items:center;">
+                  <table>
+                      <tr>
+                        <td style="border:none; text-align:left; padding-left: 20px; padding-right: 0px;">Folkmaster Full Size Steel String Guitar - Natural</td>
+                        <td style="border:none; text-align:right; padding-left: 0px; padding-right: 20px;"><a href="#" class="button-icon"><i class="fa-solid fa-trash"></i></a></td>
+                      </tr>
+                      <tr>
+                          <td style="border:none; text-align:left; padding-left: 20px; padding-right: 5px;">Quantity: <input type="text" placeholder="1" style="width:45px"></td>
+                        <td style="border:none; text-align:right; padding-left: 0px; padding-right: 20px;"><h3>$40.00</h3></td>
+                    </table>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <h3>Check Delivery Time</h3>
+            <input type="text" placeholder="Enter postcode" style="width:300px""><a href="#" class="button-primary"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <div class="grid-item">
+            <hr class="divider">
+            <h3>Promotion Code</h3>
+            <input type="text" placeholder="Enter promotion code" style="width:300px""><a href="#" class="button-primary"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <br><br>
+            <hr class="divider">
+            <br>
+            <div class="menubox"> <!--the box showing the prices-->
+                <div class="grid-container" style="align-items:center;">
+                    <table>
+                        <tr>
+                          <td style="border:none; text-align:left; padding-left: 40px; padding-right: 60px;">Shipping</td>
+                          <td style="border:none; text-align:right; padding-left: 0px; padding-right: 40px;">Not Calculated Yet</td>
+                        </tr>
+                        <tr>
+                            <td style="border:none; text-align:left; padding-left: 40px; padding-right: 60px;">GST</td>
+                            <td style="border:none; text-align:right; padding-left: 0px; padding-right: 40px;">$3.99</td>
+                        </tr>
+                        <tr>
+                            <td style="border:none; text-align:left; padding-left: 40px; padding-right: 60px;">Total</td>
+                          <td style="border:none; text-align:right; padding-left: 0px; padding-right: 40px;"><h3>$43.99</h3></td>
+                      </table>
+                </div>
+            </div>
+            <br><br>
+                <a href="checkout1.html" class="button-primary"><i class="fa-solid fa-cart-shopping"></i> Proceed to Checkout</a>
+                <br><br>
+                <a href="#" class="button-secondary">Express Checkout with PayPal</a>
+        </div>
+    </div>  
+    <hr class="divider" style="align-items: center; width:95%">
+    <h3 style="padding-left: 4%">Items in Wishlist:</h3> <!--items in wishlist:-->
+    <div class="grid-container-2">
+      <div class="grid-item">
+        <div class="button-grid" style="text-align: left;">
+          <a href="product-page.html" class="button-product"></a>
+          <br><br>
+          <a href="product-page.html" class="button-link" style="color:white; text-align: left;">Folkmaster Full Size Steel String Guitar - Natural</a>
+          <p><span style="color: #c64b4b"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> (8)</p>
+          <h3>$40.00</h3>
+          <p><i class="fa-solid fa-circle-check"></i> In Stock</p>
+          <br>
+          <button id="btn" style="padding:5px 12px; font-size: 14px;">⊕ Add to Cart</button>
+          <a href="#" class="button-icon" style="align-items:left; padding: 2px 2px"><i class="fa-solid fa-heart" style="font-size:12px"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr class="divider" style="align-items: center; width:95%">
+    <h3 style="padding-left: 4%">Browsing History:</h3> <!--browsing history:-->
+    <div class="grid-container-2">
+      <div class="grid-item">
+        <div class="button-grid" style="text-align: left;">
+          <a href="product-page.html" class="button-product"></a>
+          <br><br>
+          <a href="product-page.html" class="button-link" style="color:white; text-align: left;">Folkmaster Full Size Steel String Guitar - Natural</a>
+          <p><span style="color: #c64b4b"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> (8)</p>
+          <h3>$40.00</h3>
+          <p><i class="fa-solid fa-circle-check"></i> In Stock</p>
+          <br>
+          <button id="btn" style="padding:5px 12px; font-size: 14px;">⊕ Add to Cart</button>
+          <a href="#" class="button-icon" style="align-items:left; padding: 2px 2px"><i class="fa-solid fa-heart" style="font-size:12px"></i></a>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="button-grid" style="text-align: left;">
+          <a href="product-page.html" class="button-product"></a>
+          <br><br>
+          <a href="product-page.html" class="button-link" style="color:white; text-align: left;">Folkmaster Full Size Steel String Guitar - Natural</a>
+          <p><span style="color: #c64b4b"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> (8)</p>
+          <h3>$40.00</h3>
+          <p><i class="fa-solid fa-circle-check"></i> In Stock</p>
+          <br>
+          <button id="btn" style="padding:5px 12px; font-size: 14px;">⊕ Add to Cart</button>
+          <a href="#" class="button-icon" style="align-items:left; padding: 2px 2px"><i class="fa-solid fa-heart" style="font-size:12px"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr class="divider" style="align-items: center; width:95%">
+    <h3 style="padding-left: 4%">You may also like:</h3> <!--you may also like:-->
+    <div class="grid-container-2">
+      <div class="grid-item">
+        <div class="button-grid" style="text-align: left;">
+          <a href="product-page.html" class="button-product"></a>
+          <br><br>
+          <a href="product-page.html" class="button-link" style="color:white; text-align: left;">Folkmaster Full Size Steel String Guitar - Natural</a>
+          <p><span style="color: #c64b4b"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> (8)</p>
+          <h3>$40.00</h3>
+          <p><i class="fa-solid fa-circle-check"></i> In Stock</p>
+          <br>
+          <button id="btn" style="padding:5px 12px; font-size: 14px;">⊕ Add to Cart</button>
+          <a href="#" class="button-icon" style="align-items:left; padding: 2px 2px"><i class="fa-solid fa-heart" style="font-size:12px"></i></a>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="button-grid" style="text-align: left;">
+          <a href="product-page.html" class="button-product"></a>
+          <br><br>
+          <a href="product-page.html" class="button-link" style="color:white; text-align: left;">Folkmaster Full Size Steel String Guitar - Natural</a>
+          <p><span style="color: #c64b4b"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> (8)</p>
+          <h3>$40.00</h3>
+          <p><i class="fa-solid fa-circle-check"></i> In Stock</p>
+          <br>
+          <button id="btn" style="padding:5px 12px; font-size: 14px;">⊕ Add to Cart</button>
+          <a href="#" class="button-icon" style="align-items:left; padding: 2px 2px"><i class="fa-solid fa-heart" style="font-size:12px"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="grid-container-2">
+            <div class="grid-item">  <!--left column-->
+                <h3>Subscribe to our newsletter:</h3>
+                <input type="text" placeholder="Email Address">
+                <br><br>
+                <a href="#" class="button-primary"> Subscribe</a>
+                <br><br>
+                <hr class="divider">
+                <h3>Follow us on our socials:</h3>
+                    <div class="grid-container-2">
+                        <a href="#" class="button-icon"><i class="fa-brands fa-facebook-square"></i>
+                             @axiomaustralia</a>
+                        <a href="#" class="button-icon"><i class="fa-brands fa-instagram"></i> @axiommusic</a>
+                    </div>
+                <h3>Call us toll-free:</h3>
+                <h5><i class="fa-solid fa-phone"></i> 1800 602 580</h5>
+                <p>Copyright © 2014 Axiom Music<br>ABN: 16 082 171 097<br>Address: PO Box 270 Jannali NSW 2226</p>
+            </div>
+            <div class="grid-item"> <!--right column-->
+                <h3>Get in touch!</h3>
+                <p>Axiom Music does not operate a retail store - we are online only. That's how we keep our prices so low! If you need more information about any of our products, please leave us a message via the enquiry form below:</p>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email Address">
+                <input type="text" placeholder="Mobile / Phone (optional)">
+                <input type="text" placeholder="Preferred method of contact">
+                <input type="text" cols="100" rows="5" style="height:100px;" placeholder="Leave a message here!">
+                <br><br>
+                <a href="#" class="button-primary"> Send Message</a>
+            </div>
+      </div>
+    </div>
+  
+    <script src="script.js"></script>
+  
+    </body>
+  </HTML>
+  
